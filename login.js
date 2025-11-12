@@ -30,7 +30,6 @@ function register() {
         showWarning('Password too short! It should be at least 5 characters long');
         return;
     }
-
     if (users[username]) {
         showWarning('Such a user already exists!');
         registerUsername.value = '';
@@ -103,3 +102,4 @@ function showWarning(message) {
 function hideWarning() {
     warning.classList.add('hidden');
 }   
+

@@ -36,7 +36,6 @@ function register() {
         registerPassword.value = '';
         return;
     }
-
     users[username] = password;
     hideWarning();
     warning.textContent = 'Registration successful!';
@@ -45,12 +44,10 @@ function register() {
     loginUsername.value = '';
     loginPassword.value = '';
 }
-
 registerButton.addEventListener('click', (e) => {
     e.preventDefault();
     register();
 });
-
 function login() {
     let username = loginUsername.value.trim();
     let password = loginPassword.value.trim();
@@ -59,7 +56,6 @@ function login() {
         showWarning('Do not leave blank fields');
         return;
     }
-
     if (users[username] && users[username] === password) {
         hideWarning();
         showWarning('Login successful!');
@@ -78,8 +74,6 @@ loginButton.addEventListener('click', (e) => {
     login();
 });
 
-// log/reg buttons!
-
 goToLogin.addEventListener('click', (e) => {
     loginPanel.style.display = 'flex';
     registerPanel.style.display = 'none';
@@ -92,8 +86,6 @@ goToRegister.addEventListener('click', (e) => {
     hideWarning();
 });
 
-// warning functions!
-
 function showWarning(message) {
     warning.textContent = message;
     warning.classList.remove('hidden');
@@ -102,4 +94,3 @@ function showWarning(message) {
 function hideWarning() {
     warning.classList.add('hidden');
 }   
-

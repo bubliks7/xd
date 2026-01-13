@@ -2,12 +2,14 @@ const registerPanel = document.getElementById('registerPanel');
 const registerUsername = document.getElementById('username');
 const registerPassword = document.getElementById('password');
 const registerButton = document.getElementById('registerButton');
+
 const goToLogin = document.getElementById('goToLogin');
 
 const loginPanel = document.getElementById('loginPanel');
 const loginUsername = document.getElementById('loginUsername');
 const loginPassword = document.getElementById('loginPassword');
 const loginButton = document.getElementById('loginButton');
+
 const goToRegister = document.getElementById('goToRegister');
 
 const warning = document.getElementById('warning');
@@ -48,6 +50,7 @@ registerButton.addEventListener('click', (e) => {
     e.preventDefault();
     register();
 });
+
 function login() {
     let username = loginUsername.value.trim();
     let password = loginPassword.value.trim();

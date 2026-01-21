@@ -20,13 +20,11 @@ body {
     background-color: #fff;
 }
 
-
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 input[type="text"],
 input[type="password"] {
     padding: 12px;
@@ -34,7 +32,6 @@ input[type="password"] {
     border-radius: 5px;
     transition: border-color 0.3s;
 }
-
 input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #007BFF;
@@ -60,6 +57,7 @@ button {
     cursor: pointer;
     font-size: 14px;
 }
+
 button:hover {
     text-decoration: underline;
 }
@@ -79,9 +77,9 @@ button:hover {
     transition: opacity 0.5s ease;
     opacity: 1;
 }
-
 .log {
     display: none;
 
 }
+
 

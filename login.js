@@ -9,9 +9,7 @@ const loginPanel = document.getElementById('loginPanel');
 const loginUsername = document.getElementById('loginUsername');
 const loginPassword = document.getElementById('loginPassword');
 const loginButton = document.getElementById('loginButton');
-
 const goToRegister = document.getElementById('goToRegister');
-
 const warning = document.getElementById('warning');
 
 const users = {};
@@ -19,7 +17,6 @@ const users = {};
 function register() {
     let username = registerUsername.value.trim();
     let password = registerPassword.value.trim();
-
     if (username === '' || password === '') {
         showWarning('Do not leave blank fields');
         return;
@@ -54,7 +51,6 @@ registerButton.addEventListener('click', (e) => {
 function login() {
     let username = loginUsername.value.trim();
     let password = loginPassword.value.trim();
-
     if (username === '' || password === '') {
         showWarning('Do not leave blank fields');
         return;
@@ -97,3 +93,4 @@ function showWarning(message) {
 function hideWarning() {
     warning.classList.add('hidden');
 }   
+

@@ -13,7 +13,6 @@ const goToRegister = document.getElementById('goToRegister');
 const warning = document.getElementById('warning');
 
 const users = {};
-
 function register() {
     let username = registerUsername.value.trim();
     let password = registerPassword.value.trim();
@@ -21,6 +20,7 @@ function register() {
         showWarning('Do not leave blank fields');
         return;
     }
+    
     if (username.length < 3) {
         showWarning('Too short a name! It should be at least 3 characters long');
         return;
@@ -35,6 +35,7 @@ function register() {
         registerPassword.value = '';
         return;
     }
+    
     users[username] = password;
     hideWarning();
     warning.textContent = 'Registration successful!';
@@ -93,6 +94,7 @@ function showWarning(message) {
 function hideWarning() {
     warning.classList.add('hidden');
 }   
+
 
 
 

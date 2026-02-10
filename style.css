@@ -7,6 +7,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
+
 #formContainer {
     position: relative;
     width: 100%;
@@ -17,12 +18,10 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
-
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
+    gap: 15px;}
 
 input[type="text"],
 input[type="password"] {
@@ -80,6 +79,7 @@ button:hover {
     display: none;
 
 }
+
 
 
 

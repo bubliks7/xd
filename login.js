@@ -11,8 +11,8 @@ const loginPassword = document.getElementById('loginPassword');
 const loginButton = document.getElementById('loginButton');
 const goToRegister = document.getElementById('goToRegister');
 const warning = document.getElementById('warning');
-
 const users = {};
+
 function register() {
     let username = registerUsername.value.trim();
     let password = registerPassword.value.trim();
@@ -25,6 +25,7 @@ function register() {
         showWarning('Too short a name! It should be at least 3 characters long');
         return;
     }
+    
     if (password.length < 5) {
         showWarning('Password too short! It should be at least 5 characters long');
         return;
@@ -94,6 +95,7 @@ function showWarning(message) {
 function hideWarning() {
     warning.classList.add('hidden');
 }   
+
 
 
 

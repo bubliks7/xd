@@ -2,9 +2,7 @@ const registerPanel = document.getElementById('registerPanel');
 const registerUsername = document.getElementById('username');
 const registerPassword = document.getElementById('password');
 const registerButton = document.getElementById('registerButton');
-
 const goToLogin = document.getElementById('goToLogin');
-
 const loginPanel = document.getElementById('loginPanel');
 const loginUsername = document.getElementById('loginUsername');
 const loginPassword = document.getElementById('loginPassword');
@@ -13,7 +11,6 @@ const goToRegister = document.getElementById('goToRegister');
 const warning = document.getElementById('warning');
 
 const users = {};
-
 function register() {
     let username = registerUsername.value.trim();
     let password = registerPassword.value.trim();
@@ -95,6 +92,7 @@ function showWarning(message) {
 function hideWarning() {
     warning.classList.add('hidden');
 }   
+
 
 
 
